@@ -57,7 +57,11 @@ const ValueCard: React.FC<{ item: typeof VALUES[0]; index: number; isLightMode: 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
+<<<<<<< HEAD
       whileHover={{ y: -10 }}
+=======
+      whileHover={{ y: -8 }}
+>>>>>>> 719eadd (Initial commit)
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ 
@@ -65,49 +69,84 @@ const ValueCard: React.FC<{ item: typeof VALUES[0]; index: number; isLightMode: 
         rotateY, 
         transformStyle: "preserve-3d"
       }}
+<<<<<<< HEAD
       className={`relative flex flex-col items-center p-10 md:p-12 rounded-3xl border transition-all duration-300 group text-center h-full cursor-pointer ${
+=======
+      className={`relative flex flex-col items-center p-8 md:p-10 rounded-3xl border transition-all duration-300 group text-center h-full cursor-pointer ${
+>>>>>>> 719eadd (Initial commit)
         isLightMode 
           ? 'bg-white border-black/5 shadow-xl hover:shadow-2xl' 
           : 'bg-[#111111] border-white/5 hover:border-white/10 shadow-2xl'
       }`}
     >
+<<<<<<< HEAD
       <div style={{ transform: "translateZ(50px)" }} className="flex flex-col items-center w-full relative z-10">
         {/* Icon Box as per image */}
         <div 
           className="w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-lg transition-transform duration-300 group-hover:scale-110" 
+=======
+      <div style={{ transform: "translateZ(40px)" }} className="flex flex-col items-center w-full relative z-10">
+        {/* Icon Box */}
+        <div 
+          className="w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg transition-transform duration-300 group-hover:scale-110" 
+>>>>>>> 719eadd (Initial commit)
           style={{ backgroundColor: COLORS.primary }}
         >
           <div className="text-white">
             {item.icon === 'excellence' && (
+<<<<<<< HEAD
               <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+=======
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+>>>>>>> 719eadd (Initial commit)
                 <circle cx="12" cy="12" r="10" strokeWidth={2} />
                 <circle cx="12" cy="12" r="6" strokeWidth={2} />
                 <circle cx="12" cy="12" r="2" strokeWidth={2} />
               </svg>
             )}
             {item.icon === 'collaboration' && (
+<<<<<<< HEAD
               <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+=======
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+>>>>>>> 719eadd (Initial commit)
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             )}
             {item.icon === 'innovation' && (
+<<<<<<< HEAD
               <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+=======
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+>>>>>>> 719eadd (Initial commit)
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             )}
             {item.icon === 'integrity' && (
+<<<<<<< HEAD
               <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+=======
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+>>>>>>> 719eadd (Initial commit)
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>
             )}
           </div>
         </div>
         
+<<<<<<< HEAD
         <h3 className={`text-2xl font-black mb-4 transition-colors duration-200 ${isLightMode ? 'text-black' : 'text-white'}`}>
           {item.title}
         </h3>
         
         <p className={`text-base md:text-lg leading-relaxed font-medium transition-colors duration-200 ${isLightMode ? 'text-black/60' : 'text-white/50'}`}>
+=======
+        <h3 className={`text-xl md:text-2xl font-black mb-3 transition-colors duration-200 ${isLightMode ? 'text-black' : 'text-white'}`}>
+          {item.title}
+        </h3>
+        
+        <p className={`text-sm md:text-base leading-relaxed font-medium transition-colors duration-200 ${isLightMode ? 'text-black/60' : 'text-white/50'}`}>
+>>>>>>> 719eadd (Initial commit)
           {item.description}
         </p>
       </div>
@@ -126,11 +165,19 @@ const ValueCard: React.FC<{ item: typeof VALUES[0]; index: number; isLightMode: 
 const Values: React.FC<ValuesProps> = ({ isLightMode }) => {
   const title = "Our Values";
   return (
+<<<<<<< HEAD
     <section className={`relative w-full py-32 md:py-48 px-6 md:px-12 overflow-hidden transition-colors duration-700 ${isLightMode ? 'bg-[#FAFBFF]' : 'bg-black'}`}>
       <ValuesBackground isLightMode={isLightMode} />
       <div className="relative z-10 max-w-7xl mx-auto">
         <motion.div variants={titleContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-24 md:mb-32">
           <motion.h2 className={`text-5xl md:text-7xl font-black mb-6 tracking-tight flex justify-center flex-wrap gap-x-4 transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`}>
+=======
+    <section className={`relative w-full py-20 md:py-28 px-6 md:px-12 overflow-hidden transition-colors duration-700 ${isLightMode ? 'bg-[#FAFBFF]' : 'bg-black'}`}>
+      <ValuesBackground isLightMode={isLightMode} />
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <motion.div variants={titleContainerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16 md:mb-20">
+          <motion.h2 className={`text-3xl md:text-5xl font-black mb-4 tracking-tight flex justify-center flex-wrap gap-x-3 transition-colors duration-500 ${isLightMode ? 'text-black' : 'text-white'}`}>
+>>>>>>> 719eadd (Initial commit)
             {title.split(" ").map((word, wordIdx) => (
               <span key={wordIdx} className="flex">
                 {word.split("").map((char, charIdx) => (
@@ -144,13 +191,21 @@ const Values: React.FC<ValuesProps> = ({ isLightMode }) => {
             whileInView={{ opacity: 1, y: 0 }} 
             transition={{ delay: 0.4, duration: 0.6 }} 
             viewport={{ once: true }}
+<<<<<<< HEAD
             className={`text-lg md:text-xl font-medium transition-colors duration-500 ${isLightMode ? 'text-black/60' : 'text-white/70'}`}
+=======
+            className={`text-base md:text-lg font-medium transition-colors duration-500 ${isLightMode ? 'text-black/60' : 'text-white/70'}`}
+>>>>>>> 719eadd (Initial commit)
           >
             Principles that guide everything we do
           </motion.p>
         </motion.div>
         
+<<<<<<< HEAD
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+=======
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+>>>>>>> 719eadd (Initial commit)
           {VALUES.map((item, index) => (
             <ValueCard key={item.id} item={item} index={index} isLightMode={isLightMode} />
           ))}

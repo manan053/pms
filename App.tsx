@@ -70,10 +70,17 @@ const App: React.FC = () => {
       
       <main className="relative min-h-screen w-full flex flex-col items-center">
         {/* Hero Section */}
+<<<<<<< HEAD
         <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
           <Background3D isLightMode={isLightMode} />
           
           <div className="relative z-10 w-full max-w-7xl px-6 md:px-12 py-32 md:py-48 lg:py-0 min-h-screen flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-24 pointer-events-none">
+=======
+        <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center overflow-hidden">
+          <Background3D isLightMode={isLightMode} />
+          
+          <div className="relative z-10 w-full max-w-7xl px-6 md:px-12 py-20 md:py-24 lg:py-0 min-h-[90vh] flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 pointer-events-none">
+>>>>>>> 719eadd (Initial commit)
             <motion.div 
               className="flex-1 text-left pointer-events-auto w-full lg:w-auto"
               variants={containerVariants}
@@ -82,18 +89,32 @@ const App: React.FC = () => {
               viewport={{ once: true }}
             >
               <motion.div 
+<<<<<<< HEAD
                 className={`inline-block mb-6`}
                 variants={subtitleVariants}
               >
                 <span className={`text-xs md:text-sm font-black uppercase tracking-[0.2em] text-[#FF4D30]`}>
+=======
+                className={`inline-block mb-4`}
+                variants={subtitleVariants}
+              >
+                <span className={`text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-[#FF4D30]`}>
+>>>>>>> 719eadd (Initial commit)
                   About Us
                 </span>
               </motion.div>
               
+<<<<<<< HEAD
               <div className="mb-8 overflow-hidden">
                 <h1 className="text-6xl md:text-7xl lg:text-[7.5rem] font-black leading-[0.95] flex flex-wrap gap-x-4 md:gap-x-6">
                   {headingLines.map((word, i) => (
                     <span key={i} className="inline-block overflow-hidden py-2">
+=======
+              <div className="mb-6 overflow-hidden">
+                <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[0.95] flex flex-wrap gap-x-3 md:gap-x-4">
+                  {headingLines.map((word, i) => (
+                    <span key={i} className="inline-block overflow-hidden py-1">
+>>>>>>> 719eadd (Initial commit)
                       <motion.span 
                         variants={wordRevealVariants}
                         className="inline-block origin-bottom transition-colors duration-700"
@@ -107,7 +128,11 @@ const App: React.FC = () => {
               </div>
               
               <motion.p 
+<<<<<<< HEAD
                 className={`text-lg md:text-xl lg:text-2xl max-w-2xl leading-relaxed mb-12 font-medium transition-colors duration-700 ${isLightMode ? 'text-[#1E293B]/70' : 'text-white/70'}`}
+=======
+                className={`text-base md:text-lg lg:text-xl max-w-xl leading-relaxed mb-8 font-medium transition-colors duration-700 ${isLightMode ? 'text-[#1E293B]/70' : 'text-white/70'}`}
+>>>>>>> 719eadd (Initial commit)
                 variants={descriptionVariants}
               >
                 We are a passionate team of innovators, designers, and developers committed to transforming businesses through cutting-edge digital solutions.
@@ -122,7 +147,11 @@ const App: React.FC = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 1000, damping: 25 }}
+<<<<<<< HEAD
                   className={`px-10 md:px-12 py-4 md:py-5 rounded-full font-black text-lg md:text-xl bg-[#FF4D30] text-white transition-shadow duration-200 relative group overflow-hidden ${isLightMode ? 'shadow-[0_20px_40px_rgba(255,77,48,0.25)]' : 'shadow-[0_0_40px_rgba(255,77,48,0.4)]'}`}
+=======
+                  className={`px-8 md:px-10 py-3.5 md:py-4 rounded-full font-black text-base md:text-lg bg-[#FF4D30] text-white transition-shadow duration-200 relative group overflow-hidden ${isLightMode ? 'shadow-[0_20px_40px_rgba(255,77,48,0.25)]' : 'shadow-[0_0_40px_rgba(255,77,48,0.4)]'}`}
+>>>>>>> 719eadd (Initial commit)
                 >
                   <span className="relative z-10">Get Started</span>
                   <motion.div 
@@ -133,7 +162,11 @@ const App: React.FC = () => {
             </motion.div>
 
             <motion.div 
+<<<<<<< HEAD
               className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 w-full lg:max-w-xl pointer-events-auto"
+=======
+              className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 w-full lg:max-w-lg pointer-events-auto"
+>>>>>>> 719eadd (Initial commit)
               initial={{ opacity: 0, x: 100, filter: 'blur(20px)' }}
               whileInView={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
